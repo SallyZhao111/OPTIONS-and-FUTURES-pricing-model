@@ -1,0 +1,26 @@
+pricing and hedging/
+├── base_pricer.py
+│   Basic parent class for pricers.
+│   It defines what every pricing model should have, like price() and greeks().
+│
+├── instruments.py
+│   Stores financial products.
+│   For example, EuropeanOption, AmericanOption, BarrierOption, AsianOption, and BasketOption.
+│
+├── parameter_tools.py
+│   Helps get or calculate input parameters.
+│   For example, it can get stock OHLC data and calculate time to maturity.
+│
+├── bsm_pricer.py
+│   Black-Scholes-Merton option pricing model.
+│   Used to price European call and put options.
+│
+├── futures_pricer.py
+│   Futures pricing model.
+│   Uses the formula: F = S * exp((r + c - q) * T)
+│
+├── display.py
+│   Used to show pricing results in a cleaner format.
+│
+└── test.ipynb
+    Notebook for testing the code and trying examples.
